@@ -1,0 +1,23 @@
+.container  {
+  background-color: blue;
+  color:blue;
+}
+
+.container {
+  margin: 20px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+}
+
+.input-group label {
+  font-weight: bold;
+}
+
+.result {
+  margin-top: 10px;
+  font-weight: bold;
+}

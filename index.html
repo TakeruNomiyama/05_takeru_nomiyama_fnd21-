@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ブレーキ制動力検査</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>ブレーキ制動力検査</h1>
+    <img src=C:\Users\1603269\Desktop\DIG\dig-foundations\Presentation\images.png>
+    <div class="input-group">
+      <label for="unitSelect">単位選択:</label>
+      <select id="unitSelect">
+        <option value="N">N</option>
+        <option value="kgf">kgf</option>
+        <option value="daN">daN</option>
+      </select>
+    </div>
+    <div class="input-group">
+      <label for="frontWeight">前軸重（+55）:</label>
+      <input type="number" id="frontWeight" step="any">
+    </div>
+    <div class="input-group">
+      <label for="rearWeight">後軸重:</label>
+      <input type="number" id="rearWeight" step="any">
+    </div>
+    <div class="input-group">
+      <label for="frontLeftBrake">左前ブレーキ数値:</label>
+      <input type="number" id="frontLeftBrake" step="any">
+    </div>
+    <div class="input-group">
+      <label for="frontRightBrake">右前ブレーキ数値:</label>
+      <input type="number" id="frontRightBrake" step="any">
+    </div>
+    <div class="input-group">
+      <label for="rearLeftBrake">左後ブレーキ数値:</label>
+      <input type="number" id="rearLeftBrake" step="any">
+    </div>
+    <div class="input-group">
+      <label for="rearRightBrake">右後ブレーキ数値:</label>
+      <input type="number" id="rearRightBrake" step="any">
+    </div>
+    <div class="input-group">
+      <label for="rightParkingBrake">駐車ブレーキ（右）:</label>
+      <input type="number" id="rightParkingBrake" step="any">
+    </div>
+    <div class="input-group">
+      <label for="leftParkingBrake">駐車ブレーキ（左）:</label>
+      <input type="number" id="leftParkingBrake" step="any">
+    </div>
+
+    <button id="calculateButton">計算</button>
+    <div class="result">
+      <h2>計算結果</h2>
+      <p>前軸制動力: <span id="frontResult"></span></p>
+      <p>前軸左右差: <span id="frontDifResult"></span></p>
+      <p>後軸制動力: <span id="rearResult"></span></p>
+      <p>後軸左右差: <span id="rearDifResult"></span></p>
+      <p>総和制動力: <span id="totalBrakingResult"></span></p>
+      <p>駐車ブレーキ制動力: <span id="sideBrakeResult"></span></p>
+      <h2>判定結果</h2>
+      <div id="judgmentResult"></div>
+    </div>
+    <script src="script.js"></script>
+  </div>
+</body>
+</html>
